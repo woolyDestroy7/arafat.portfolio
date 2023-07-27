@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: rgb(108, 173, 195);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #2a2a2a; /* Dark gray background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for the navigation bar */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Center logo vertically */
+}
+
+.logo img {
+    width: 60px; /* Adjust the width of the logo image */
+    height: 60px; /* Maintain the aspect ratio */
+    margin-right: 10px; /* Add some space between the logo and text */
+}
+
+.logo-text {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+}
+
+.nav-menu li {
+    margin: 0 10px;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.nav-menu li a:hover {
+    background-color: #444; /* Darker color on hover */
+}
+
+/* Sections */
+section {
+    margin: 40px auto; /* Center the sections horizontally and add vertical spacing */
+    max-width: 800px; /* Limit the width of the sections */
+    text-align: center; /* Center the text within the sections */
+}
+
+section h2 {
+    font-size: 28px; /* Increase the font size of section headings */
+    margin-bottom: 15px; /* Add more space below section headings */
+}
+
+section p {
+    font-size: 18px; /* Increase the font size of paragraph text */
+}
+
+section img {
+    max-width: 100%; /* Ensure images fit within the section container */
+    margin: 20px 0; /* Add spacing above and below images */
+}
+
+
+/* Home Section */
+#home-section {
+    margin-top: 60px; /* Adjust the spacing from the navigation bar */
+}
+
+.home-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.home-text {
+    flex: 1; /* Take up available space (left-align text) */
+    padding: 20px;
+}
+
+.home-image {
+    flex: 1; /* Take up available space (right-align image) */
+    padding: 20px;
+    text-align: right; /* Right-align the image within its container */
+}
+
+.home-text h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.home-text p {
+    font-size: 18px;
+}
+
+.home-image img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ccc; /* Add a border around the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    border-radius: 8px; /* Add border radius for a rounded corner effect */
+}
+
+#counter{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0707ff;
+    padding: 40px 0px;
+    width: 100%;
+    border-radius: 50%;
+  }
+  #counter .item{
+    background: #fff;
+    width: 200px;
+    padding: 35px 40px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 38px -8px rgba(0,0,0,0.34);
+  -moz-box-shadow: 0px 0px 38px -8px rgba(0,0,0,0.34);
+  box-shadow: 0px 0px 38px -8px rgba(0,0,0,0.34);
+  } 
+  #counter .item .count{
+    color: #e8b12d;
+    margin-bottom: 5px;
+    font-size: 40px;
+  }
+  #counter .item h3{
+    color: #4f4e28;
+    text-transform: capitalize;
+  }
+
+  .services .boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .services .boxes .box{
+    margin: 20px 0;
+    width: calc(100% / 3 - 20px);
+    text-align: center;
+    border-radius: 12px;
+    padding: 30px 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+    cursor: default;
+    transition: all 0.4s ease;
+  }
+  .services .boxes .box:hover{
+    background: #4070f4;
+    color: #fff;
+  }
+  .services .boxes .box .icon{
+    height: 50px;
+    width: 50px;
+    background: #4070f4;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    color: #fff;
+    margin: 0 auto 10px auto;
+    transition: all 0.4s ease;
+  }
+  .boxes .box:hover .icon{
+    background-color: #fff;
+    color: #4070f4;
+  }
+  .services .boxes .box:hover .topic,
+  .services .boxes .box:hover p{
+    color: #0E2431;
+    transition: all 0.4s ease;
+  }
+  .services .boxes .box:hover .topic,
+  .services .boxes .box:hover p{
+    color: #fff;
+  }
+
+  .container .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .content .left-side{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+}
+.content .left-side::before{
+  content: '';
+  position: absolute;
+  height: 70%;
+  width: 2px;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #afafb6;
+}
+.content .left-side .details{
+  margin: 14px;
+  text-align: center;
+}
+.content .left-side .details i{
+  font-size: 30px;
+  color: #3e2093;
+  margin-bottom: 10px;
+}
+.content .left-side .details .topic{
+  font-size: 18px;
+  font-weight: 500;
+}
+.content .left-side .details .text-one,
+.content .left-side .details .text-two{
+  font-size: 14px;
+  color: #430dd9;
+}
+.container .content .right-side{
+  width: 75%;
+  margin-left: 75px;
+}
+.content .right-side .topic-text{
+  font-size: 23px;
+  font-weight: 600;
+  color: #3e2093;
+}
+.right-side .input-box{
+  height: 50px;
+  width: 100%;
+  margin: 12px 0;
+}
+.right-side .input-box input,
+.right-side .input-box textarea{
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #F0F1F8;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+}
+.right-side .message-box{
+  min-height: 110px;
+}
+.right-side .input-box textarea{
+  padding-top: 6px;
+}
+.right-side .button{
+  display: inline-block;
+  margin-top: 12px;
+}
+.right-side .button input[type="button"]{
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #3e2093;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button input[type="button"]:hover{
+  background: #5029bc;
+}
+@media (max-width: 950px) {
+  .container{
+    width: 90%;
+    padding: 30px 40px 40px 35px ;
+  }
+  .container .content .right-side{
+   width: 75%;
+   margin-left: 55px;
+}
+}
+@media (max-width: 820px) {
+  .container{
+    margin: 40px 0;
+    height: 100%;
+  }
+  .container .content{
+    flex-direction: column-reverse;
+  }
+ .container .content .left-side{
+   width: 100%;
+   flex-direction: row;
+   margin-top: 40px;
+   justify-content: center;
+   flex-wrap: wrap;
+ }
+ .container .content .left-side::before{
+   display: none;
+ }
+ .container .content .right-side{
+   width: 100%;
+   margin-left: 0;
+ }
+}
+
+.title .text {
+    position: absolute;
+    top: 180%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  footer{
+    background-color: #4070f4;
+  }
+
+  .footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+  }
+
+  .socialIcons{
+    display: flex;
+    justify-content: center;
+  }
+
+  .socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+  }
+
+  .socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+  }
+
+  .socialIcons a:hover{
+    background-color: rgb(108, 173, 195);
+    transition: 0.5s;
+  }
+
+  .socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+  }
+
+  .footerNav{
+    margin: 30px 0;
+  }
+
+  .footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+  }
+
+  .footerNav ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+  }
+
+  .footerNav ul li a:hover{
+    opacity: 1;
+  }
+
+  .footerBottom{
+    background-color: rgb(108, 173, 195);
+    padding: 20px;
+    text-align: center;
+  }
+
+  .footerBottom p{
+    color: white;
+  }
+
+  .designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px ;
+  }
+
+  @media (max-width: 700px) {
+    .footerNav ul{
+        flex-direction: column;
+    }
+
+    .footerNav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+  }
